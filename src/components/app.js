@@ -3,8 +3,8 @@ angular.module('flash-site')
   controller: function() {
 
     this.data = window.to6(window.data);
-    this.activeGame = this.data[0][1];
-    this.activeGameSrc = 'public/swf/' + this.activeGame.name + '.swf';
+    this.activeGameName = this.data[0][1].name;
+    this.activeGameSrc = 'public/swf/' + this.activeGameName + '.swf';
     this.tags = ['By Kat & Friends', 'Shooting', 'Strategy', 'RPG', 'Stick', 'Arcade'];
     this.showGame = true;
 
@@ -13,12 +13,12 @@ angular.module('flash-site')
     };
     this.toggleShowGame = () => {
       this.showGame = !this.showGame;
-      if (this.showGame === true) {
-        this.loadGame();
-      }
+      if (this.showGame) this.loadGame();
     };
-    this.clickGame = () => {
-      console.log('a game was clicked');
+    this.clickGame = (name) => {
+      this.activeGameName = name;
+      this.activeGameSrc = 'public/swf/' + this.activeGameName + '.swf';
+      if (this.showGame) this.loadGame();
     };
     this.loadGame = () => {
       document.getElementById('activeGame').innerHTML = 
