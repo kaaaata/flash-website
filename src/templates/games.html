@@ -1,0 +1,5 @@
+<div class="games">
+	<div class="six-games" ng-repeat="six in $ctrl.data">
+  	<game ng-repeat="game in six" game="game" click-game="$ctrl.clickGame"></game>  
+	</div>
+</div>

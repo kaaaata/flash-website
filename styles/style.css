@@ -1,0 +1,64 @@
+body {
+    background-color: Snow;
+    cursor: default;
+}
+embed {
+    width: 720px;
+    height: 480px;
+}
+h1 {
+    margin: 0;
+}
+
+.everything {
+    display: block;
+    margin: auto;
+    border: solid black;
+    width: 1000px;
+}
+.title-navbar {
+}
+.title {
+    border-bottom: solid black;
+}
+.navbar {
+    border-bottom: solid black;
+    display: flex;
+    justify-content: center;
+}
+.navbar-entry {
+    border: solid black;
+    width: 140px;
+    margin: 5px;
+    text-align: center;
+}
+.navbar-entry:hover {
+    background-color: rgb(230,225,250);
+}
+#title {
+    width: 500px;
+    display: block;
+    margin: auto;
+}
+.mainframe {
+    border-bottom: solid black;
+}
+.six-games {
+    display: flex;
+    justify-content: center;
+}
+.game {
+    text-align: center;
+    border: solid black;
+    margin: 5px;
+    width: 125px;
+    height: 125px;
+}
+.game:hover {
+    opacity: 0.25;
+}
+.game-img {
+    border: solid black;
+    width: 100px;
+    height: 100px;
+}
