@@ -24,6 +24,9 @@ angular.module('flash-site')
       document.getElementById('activeGame').innerHTML = 
         '<center><embed src="' + this.activeGameSrc + '" /></center>';
     };
+    this.fullscreen = () => {
+      
+    };
 
     this.$onInit = () => {
       console.log('angular sucks');

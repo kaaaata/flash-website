@@ -47,6 +47,9 @@ h1 {
     display: flex;
     justify-content: center;
 }
+.games {
+    border-bottom: solid black;
+}
 .game {
     text-align: center;
     border: solid black;
